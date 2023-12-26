@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="stylingNavBar.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0px 100px;
+            position: fixed;
+            top: 0;
+            left: 0px;
+            background-image: linear-gradient(#24252A, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav .logo p {
+            font-size: 30px;
+            font-weight: bold;
+            float: left;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            margin-right: 200px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav li {
+            display: inline-block;
+            list-style: none;
+        }
+
+        nav li a {
+            font-size: 18px;
+            text-transform: none;
+            padding: 0px 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            color: red;
+            transition: all 0.4s ease 0s;
+        }
+
+        .header-action {
+            display: flex;
+            align-items: center;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url("bgimage.jpg") center/cover no-repeat fixed;
+        }
+
+        .wrapper {
+            max-width: 650px;
+            padding: 28px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.8); /* Adjusted background color */
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: bold;
+            text-align: left;
+            color: black;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .input-box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .input-box:nth-child(2n) {
+            justify-content: end;
+            margin-bottom: 15px;
+        }
+
+        .symbol{
+            color: orange;
+        }
+
+        .letter{
+            color: orange;
+        }
+
+        .button-container {
+            text-align: left; /* Center the button horizontally */
+            margin-top: 20px; /* Adjust the top margin as needed */
+        }
+
+        .button-container button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: none;
+            color: black;
+            border-color: orange;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: red;
+        }
+
+        .login-text {
+            font-size: 14px;
+            color: #333;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .login-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content-items img {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>LOGO</p>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Cinemas</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <form action="" method="post">
+            <h1>Sign Up</h1>
+            <div class="content">
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your valid email address" mail="Email" required>
+                </div>
+                <div class="input-box">
+                    <label for="number">Mobile Number</label>
+                    <input type="tel" placeholder="Enter your phone number" mail="number" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter password" mail="password" required>
+                </div>
+                <div class="input-box">
+                    <label for="retype-password">Retype Password</label>
+                    <input type="password" placeholder="Retype your password" mail="retypePassword" required>
+                </div>
+                <div>
+                    <h2>Password Must:</h2>
+                    <div>
+                    <p>❌Contain minimum 8 characters.</p>
+                    <p>❌Include at least one number and <span class="symbol">symbol.</span></p>
+                    <p>❌Include both lower and upper case <span class="letter">letter.</span></p>
+                </div>
+                </div>
+                </div>
+
+                <div class="button-container">
+                    <button>SIGN UP</button>
+                </div>
+                <div class="login-text">
+                    Already Member? <br>
+                    <a href="#" class="login-link">Log In</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
