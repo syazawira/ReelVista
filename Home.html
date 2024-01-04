@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0”>
+    <title>Cinema Ku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10 px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .movie {
+            width: 30%;
+            margin: 10px;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cinema Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Showtimes</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Featured Movie</h2>
+        <div class="movie-container">
+            <div class="movie">
+                <img src="featured-movie.jpg" alt="Featured Movie">
+                <h3>Movie Title</h3>
+                <p>Release Date: January 1, 2024</p>
+                <p>Description of the featured movie.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Upcoming Movies</h2>
+        <div class="movie-container">
+            <div class="movie">
+                <img src="upcoming-movie1.jpg" alt="Upcoming Movie 1">
+                <h3>Upcoming Movie 1</h3>
+                <p>Release Date: January 15, 2024</p>
+            </div>
+            <div class="movie">
+                <img src="upcoming-movie2.jpg" alt="Upcoming Movie 2">
+                <h3>Upcoming Movie 2</h3>
+                <p>Release Date: February 1, 2024</p>
+            </div>
+            <!-- Add more upcoming movies as needed -->
+        </div>
+    </section>
+
+</body>
+</html>
+
